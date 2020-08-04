@@ -48,6 +48,7 @@ a {
 
 a.h {
   color: var(--accent);
+  display: inline-block;
 }
 
 a:hover {
@@ -93,13 +94,17 @@ span {
 .h1 {
   font-size: 2em;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  border-bottom: solid 5px var(--accent);
 }
 
 .h2 {
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 25px;
+  margin-bottom: 5px;
+  border-bottom: solid 3px var(--accent);
 }
 
 .h3 {
@@ -109,11 +114,15 @@ span {
 }
 
 footer {
-  margin: 50px 0;
+  margin: 25px 0;
 }
 
 .noBottomMargin {
   margin-bottom: 0;
+}
+
+.noBold {
+  font-weight: normal !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -130,6 +139,11 @@ footer {
 
   a {
     color: var(--text);
+  }
+
+  .sub-card {
+    background-color: var(--text-dim) !important;
+    color: #000 !important;
   }
 }
 
@@ -152,6 +166,7 @@ footer {
   font-size: 1em;
   font-weight: bold;
   margin: 0;
+  line-height: 1em;
 }
 
 .cardText {
@@ -161,6 +176,13 @@ footer {
 
 .sub-card {
   padding: 0;
+  background-color: #000;
+}
+
+.sub-card-title {
+  padding: 10px 0 10px 10px;
+  margin: 0;
+  font-weight: bold;
 }
 
 table, tr {
@@ -175,8 +197,11 @@ td a {
   width: 100%;
   height: 100%;
   padding: 10px 0 10px 0;
-  font-weight: bold;
   color: #fff;
+}
+
+td a p {
+  margin: 0;
 }
 
 .left {
@@ -184,7 +209,7 @@ td a {
   height: 100%;
   text-align: center;
   background-color: #228B22;
-  border-radius: 5px 0 0 5px;
+  border-radius: 0 0 0 5px;
 } 
 
 .right {
@@ -192,7 +217,7 @@ td a {
   height: 100%;
   text-align: center;
   background-color: #007565;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 0 5px 0;
 }
 
 @media only screen and (max-width: 765px) {
