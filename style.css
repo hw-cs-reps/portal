@@ -1,7 +1,30 @@
 :root {
   --accent: #228B22;
+  --accent-dim: #228b2285;
   --text: #444;
   --card-padding: 10px;
+}
+
+/*Scrollbar Settings*/
+
+/* Width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-dim);
+}
+
+/* Handle on click */
+::-webkit-scrollbar-thumb:active {
+  background: var(--accent);
 }
 
 body {
@@ -11,7 +34,7 @@ body {
 }
 
 .content {
-  max-width: 650px;
+  max-width: 750px;
   padding: 10px;
   margin: auto;
 }
@@ -86,7 +109,7 @@ span {
 }
 
 footer {
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .noBottomMargin {
@@ -96,7 +119,8 @@ footer {
 @media (prefers-color-scheme: dark) {
   :root {
     --accent: #228B22;
-    --text: #cfcfcf;
+    --text: #eee;
+    --text-dim: #ddd; 
   }
 
   body {
@@ -111,7 +135,7 @@ footer {
 
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
 }
 
@@ -132,16 +156,53 @@ footer {
 
 .cardText {
   margin: 0;
+  color: var(--text-dim);
+}
+
+.sub-card {
+  padding: 0;
+}
+
+table, tr {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+}
+
+td a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0 10px 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  background-color: #228B22;
+  border-radius: 5px 0 0 5px;
+} 
+
+.right {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  background-color: #007565;
+  border-radius: 0 5px 5px 0;
 }
 
 @media only screen and (max-width: 765px) {
-  .card-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
   a {
   line-height: 1.75em;
   font-size: 1.1em;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
   }
 
   .inlineLink {
@@ -155,11 +216,5 @@ footer {
   .titleBar {
     max-width: 750px;
     border-radius: 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .card-grid {
-    grid-template-columns: 1fr;
   }
 }
