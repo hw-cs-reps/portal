@@ -119,8 +119,12 @@ span {
   color: #fff !important;
 }
 
-.title:hover {
+.title:hover, .title:focus {
   color: #ddd !important;
+}
+
+.title:hover, .title:focus {
+  outline: none;
 }
 
 .h {
@@ -226,7 +230,7 @@ footer {
   color: var(--accent);
 }
 
-.left:hover, .right:hover {
+.left:hover, .right:hover, .left:focus, .right:focus {
   background-color: #ddd;
 }
 
