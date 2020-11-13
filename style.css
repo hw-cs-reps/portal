@@ -178,6 +178,11 @@ footer {
   a {
     color: var(--accent);
   }
+
+  .week {
+    color: #000 !important;
+    background-color: #fff !important;
+  }
 }
 
 .card-grid {
@@ -243,11 +248,15 @@ footer {
   border-radius: 5px;
 }
 
+#week {
+  padding: 0;
+}
+
 
 @media only screen and (max-width: 765px) {
   a {
-  line-height: 1.75em;
-  font-size: 1.1em;
+    line-height: 1.75em;
+    font-size: 1.1em;
   }
 
   .card-grid {
