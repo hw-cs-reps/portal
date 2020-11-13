@@ -234,6 +234,16 @@ footer {
   background-color: #ddd;
 }
 
+.week {
+  background: #000;
+  color: #fff;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+
 @media only screen and (max-width: 765px) {
   a {
   line-height: 1.75em;

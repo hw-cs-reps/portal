@@ -22,6 +22,7 @@
     <a href="/" class="title">Portal</a>
   </div>
   <div class="content">
+    <center><div class="week">Week <span id="week"></span></div></center>
     <div class="card-grid">
       <a class="card" href="https://portal.hw.ac.uk/">
         <p class="card-title">Official Portal</p>
@@ -218,6 +219,20 @@
       </center>
     </footer>
   </div>
+  <script>
+var d = new Date();
+var day = (d.getDay()+ 6) % 7;
+var d2 = new Date();
+d2.setDate(d2.getDate() - day + 3);
+var thur = d2.valueOf();
+d2.setMonth(8, 14); // must be day of week 1
+if (d2.getDay() !== 4) {
+  d2.setMonth(8, 14 + ((4 - d2.getDay()) + 7) %7); // update here too!
+}
+// note: this won't work if the weeks span over the year
+var week = (1 + Math.ceil((thur - d2) / 604800000));
+document.getElementById("week").innerText = week;
+  </script>
 
   <script data-goatcounter="https://myhwu.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
