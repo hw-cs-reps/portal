@@ -230,7 +230,7 @@ if (d2.getDay() !== 4) {
   d2.setMonth(8, 14 + ((4 - d2.getDay()) + 7) %7); // update here too!
 }
 // note: this won't work if the weeks span over the year
-var week = (1 + Math.ceil((thur - d2) / 604800000));
+var week = (1 + Math.round((thur - d2) / 604800000));
 document.getElementById("week").innerText = week;
   </script>
 
