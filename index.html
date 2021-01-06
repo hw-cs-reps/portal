@@ -225,9 +225,9 @@ var day = (d.getDay()+ 6) % 7;
 var d2 = new Date();
 d2.setDate(d2.getDate() - day + 3);
 var thur = d2.valueOf();
-d2.setMonth(8, 14); // must be day of week 1
+d2.setMonth(0, 11); // must be day of week 1
 if (d2.getDay() !== 4) {
-  d2.setMonth(8, 14 + ((4 - d2.getDay()) + 7) %7); // update here too!
+  d2.setMonth(0, 11 + ((4 - d2.getDay()) + 7) %7); // update here too!
 }
 // note: this won't work if the weeks span over the year
 var week = (1 + Math.round((thur - d2) / 604800000));
