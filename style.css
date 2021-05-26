@@ -4,6 +4,8 @@
   --text: #444;
   --text-dim: #eee; 
   --card-padding: 10px;
+
+  --card-yellow: #e6d600;
 }
 
 @font-face {
@@ -122,7 +124,6 @@ span {
 .title:hover, .title:focus {
   color: #ddd !important;
 }
-
 .title:hover, .title:focus {
   outline: none;
 }
@@ -235,6 +236,10 @@ footer {
   color: var(--accent);
 }
 
+.sub-card-dark .left, .sub-card-dark .right {
+  color: #000 !important;
+}
+
 .left:hover, .right:hover, .left:focus, .right:focus {
   background-color: #ddd;
 }
@@ -275,4 +280,8 @@ footer {
     max-width: 750px;
     border-radius: 0;
   }
+}
+.alert-yellow {
+  background-color: var(--card-yellow) !important;
+  color: #000;
 }
