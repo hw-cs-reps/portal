@@ -25,6 +25,7 @@
     <!--<center><div class="week">Week <span
       id="week"></span></div></center>-->
 
+<!-- Contribute Table -->
 <div class="card alert-yellow">
   <p class="card-title">Contribute!</p>
   <p>This is a community-built website, and the previous maintainers are no
@@ -43,6 +44,7 @@
         <p class="card-title">Student Self Service</p>
         <p class="card-text">myhwu.hw.ac.uk</p>
       </a>
+      <!-- Teaching Timetables -->
       <div class="card">
         <div class="card-title">Teaching Timetables</div>
         <div class="card-grid sub-card">
@@ -50,6 +52,7 @@
           <a class="right" href="https://timetable.hw.ac.uk/WebTimetables/LiveDU/login.aspx">Dubai</a>
         </div>
       </div>
+      <!-- Resource Booker -->
       <div class="card">
         <div class="card-title">Resource Booker</div>
         <div class="card-grid sub-card">
@@ -59,6 +62,7 @@
       </div>
     </div>
 
+    <!-- Quick Links -->
     <div>
       <a href="#links" class="h h1">
         <i class="fas fa-link"></i>
@@ -92,6 +96,7 @@
     <p class="card-title">MACS Project System</p>
     <a href="https://www.macs.hw.ac.uk/cs/project-system/" class="link-list" rel="noreferrer noopener" target="_self">macs.hw.ac.uk/cs/project-system</a>
 
+    <!-- Exam Links -->
     <div>
       <a href="#exam" class="h h2">
         <i class="fas fa-file-alt"></i>
@@ -101,9 +106,13 @@
     <p class="card-title">Exam Timetables &amp; Guides</p>
     <a href="https://www.hw.ac.uk/uk/students/studies/examinations.htm" class="link-list" rel="noreferrer noopener" target="_self">hw.ac.uk/uk/students/studies/examinations.htm</a>
 
+    <p class="card-title">Assessment Results</p>
+    <a href="https://www.hw.ac.uk/uk/students/studies/examinations/results.htm" class="link-list" rel="noreferrer noopener" target="_self">hw.ac.uk/uk/students/studies/examinations/results.htm</a>
+
     <p class="card-title">Reassessment Registration &amp; Timetable</p>
     <a href="https://www.hw.ac.uk/uk/students/studies/examinations/re-assessment.htm" class="link-list" rel="noreferrer noopener" target="_self">hw.ac.uk/uk/students/studies/examinations/re-assessment.htm</a>
 
+    <!-- General Help -->
     <div>
       <a href="#general" class="h h2">
         <i class="fas fa-info-circle"></i>
@@ -113,6 +122,7 @@
     <p class="card-title">eduroam</p>
     <a href="https://www.hw.ac.uk/uk/services/is/it-essentials/wifi.htm" class="link-list" rel="noreferrer noopener" target="_self">hw.ac.uk/uk/services/is/it-essentials/wifi.htm</a>
 
+    <!-- MACS Resources -->
     <div>
       <a href="#macs" class="h h2">
         <i class="fas fa-university"></i>
@@ -145,6 +155,7 @@
     <p class="card-title">MACS Email Lists &amp; Aliases</p>
     <a href="https://www.macs.hw.ac.uk/cs/localinfo/facil/aliases.htm" class="link-list" rel="noreferrer noopener" target="_self">macs.hw.ac.uk/cs/localinfo/facil/aliases.htm</a>
 
+    <!-- MACS SSH Servers -->
     <div>
       <a href="#server" class="h h3">
         <i class="fas fa-server"></i>
@@ -162,9 +173,15 @@
         <li>thor (<b>internal only</b>)</li>
        <li>sif (<b>internal only</b>)</li>
     </ul>
-    <p>You can SSH to public servers with: <code>ssh
-      &lt;host&gt;.macs.hw.ac.uk</code></p>
+    <p>You can SSH to the gateway with: <code>ssh -p 44788 &lt;username&gt;@sshgw.hw.ac.uk</code></p>
+    <p>You will still need to enter the <a href="#server">internal MACS Servers</a> (jove, osiris) listed above after getting into the SSH Gateway with <code>ssh &lt;username&gt;@ssh.macs.hw.ac.uk</code></p><br>
+    <p>(P.S. You can simplify the process with<br><code>ssh -J &lt;username&gt;@sshgw.hw.ac.uk:44788 &lt;username&gt;@ssh.macs.hw.ac.uk</code> )</p>
 
+    <p>You can SSH to the hosts with: <code>ssh &lt;host&gt;</code></p>
+
+    <p><strong>NOTE:</strong> Make sure you have <a href="https://www.hw.ac.uk/uk/services/is/it-essentials/multi-factor-authentication.htm" target="_blank">MFA Enabled</a> as you will be required to enter a verification code too.</p>
+
+    <!-- MACS Help -->
     <div class="card-grid">
       <a class="card" href="mailto:help@macs.hw.ac.uk">
         <p class="card-title">MACS Help</p>
@@ -183,38 +200,47 @@
         login</a>.</p>
     <p>If the links aren't working for you, right click and copy the email address.</p>
     <div class="card-grid">
+      <!-- Advice Hub -->
       <a class="card" href="mailto:advice.hub@hw.ac.uk">
         <p class="card-title">Advice Hub</p>
         <p class="card-text">advice.hub@hw.ac.uk</p>
       </a>
+      <!-- Student Centre -->
       <a class="card" href="mailto:studentcentre@hw.ac.uk">
         <p class="card-title">Student Centre</p>
         <p class="card-text">studentcentre@hw.ac.uk</p>
       </a>
+      <!-- Disability -->
       <a class="card" href="mailto:disability@hw.ac.uk">
         <p class="card-title">Disability</p>
         <p class="card-text">disability@hw.ac.uk</p>
       </a>
+      <!-- Student Wellbeing -->
       <a class="card" href="mailto:studentwellbeing@hw.ac.uk">
         <p class="card-title">Student Wellbeing</p>
         <p class="card-text">studentwellbeing@hw.ac.uk</p>
       </a>
+      <!-- Info Services Helpdesk -->
       <a class="card" href="mailto:ishelp@hw.ac.uk">
         <p class="card-title">Info Services Helpdesk</p>
         <p class="card-text">ishelp@hw.ac.uk</p>
       </a>
+      <!-- IT Helpdesk -->
       <a class="card" href="mailto:ithelp@hw.ac.uk">
         <p class="card-title">IT Helpdesk</p>
         <p class="card-text">ithelp@hw.ac.uk</p>
       </a>
+      <!-- Halls -->
       <a class="card" href="mailto:halls@hw.ac.uk">
         <p class="card-title">Halls</p>
         <p class="card-text">halls@hw.ac.uk</p>
       </a>
+      <!-- Residence Life -->
       <a class="card" href="mailto:reslife@hw.ac.uk">
         <p class="card-title">Residence Life</p>
         <p class="card-text">reslife@hw.ac.uk</p>
       </a>
+      <!-- Off Campus Services -->
       <a class="card" href="mailto:offcampus@hw.ac.uk">
         <p class="card-title">Off Campus Services</p>
         <p class="card-text">offcampus@hw.ac.uk</p>
