@@ -162,8 +162,11 @@
         <li>thor (<b>internal only</b>)</li>
        <li>sif (<b>internal only</b>)</li>
     </ul>
-    <p>You can SSH to public servers with: <code>ssh
-      &lt;host&gt;.macs.hw.ac.uk</code></p>
+    <p>You can SSH to the gateway with: <code>ssh -p 44788 &lt;host&gt;@sshgw.hw.ac.uk</code></p>
+    <p>You will still need to enter the <a href="#server">internal MACS Servers</a> (jove, osiris) listed above after getting into the SSH Gateway with <code>ssh &lt;host&gt;@ssh.macs.hw.ac.uk</code></p><br>
+    <p>(P.S. You can simplify the process with<br><code>ssh -J &lt;host&gt;@sshgw.hw.ac.uk:44788 &lt;host&gt;@ssh.macs.hw.ac.uk</code> )</p>
+
+    <p><strong>NOTE:</strong> Make sure you have <a href="https://www.hw.ac.uk/uk/services/is/it-essentials/multi-factor-authentication.htm" target="_blank">MFA Enabled</a> as you will be required to enter a verification code too.</p>
 
     <div class="card-grid">
       <a class="card" href="mailto:help@macs.hw.ac.uk">
