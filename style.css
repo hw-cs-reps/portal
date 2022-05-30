@@ -163,6 +163,7 @@ footer {
   font-weight: normal !important;
 }
 
+/* Dark Mode Preferance */
 @media (prefers-color-scheme: dark) {
   :root {
     --accent: #228B22;
