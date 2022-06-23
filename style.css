@@ -220,7 +220,7 @@ footer {
 .card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  box-sizing: border-box;        <p>Step 4:</p>
+  box-sizing: border-box;
 }
 
 .card {
