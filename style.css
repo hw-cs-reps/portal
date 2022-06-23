@@ -163,7 +163,34 @@ footer {
   font-weight: normal !important;
 }
 
-/* Dark Mode Preferance */
+.code-block {
+  border: solid 1px var(--accent);
+  border-radius: 5px;
+  padding: 10px 10px 0 10px;
+  margin: 10px 0;
+}
+
+.image-container {
+  padding: 10px;
+  margin: 10px 0;
+  background: #DADADA;
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-container h3{
+  text-align: center;
+}
+
+.image-container p {
+  text-align: center;
+}
+
+/* Dark Mode Preference */
 @media (prefers-color-scheme: dark) {
   :root {
     --accent: #228B22;
@@ -184,12 +211,16 @@ footer {
     color: #000 !important;
     background-color: #fff !important;
   }
+
+  .image-container {
+    background-color: #252525;
+  }
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  box-sizing: border-box;
+  box-sizing: border-box;        <p>Step 4:</p>
 }
 
 .card {
