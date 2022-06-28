@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portal. Links to important university services">
+    <meta name="theme-color" content="#228B22">
+    <meta name="msapplication-navbutton-color" content="#228B22">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="/portal.png" />
+    <link rel="icon" sizes="500x500" href="/portal.png">
+    <link rel="apple-touch-icon" href="/portal.png" />
+    <link rel="stylesheet" href="style.css">
+    <link href="/fa/css/all.min.css" rel="stylesheet">
+</head>
+
+<div class="titleBar">
+    <a href="/" class="title">Portal</a>
+</div>
+
+<div class="content">
+    <div class="card alert-yellow">
+        <p class="card-title">Contribute!</p>
+        <p>This is a community-built website, and the previous maintainers are no
+            longer students of the university. Please help us keep information up-to-date
+            by contributing!</p>
+
+        <div class="card-grid sub-card sub-card-dark">
+            <a class="left" href="https://github.com/hw-cs-reps/portal">Contribute on GitHub!</a>
+        </div>
+    </div>
+
+    <div>
+        <a href="#outlook" class="h h2">
+            <i class="fas fa-envelope"></i>
+            <span id="outlook">Accessing Outlook on GNU/Linux Systems</span>
+        </a>
+    </div>
+    <p>Guide written by <a href="https://github.com/kgdn">Kieran Gordon</a>.</p>
+    <hr>
+    <p><b>(Tested on Fedora Linux 36.)</b></p>
+    <p>Due to the proprietary nature of Microsoft Office 365 and Outlook, and the university requiring Two-Factor
+        Authentication (and restricting the creation of App Passwords), some additional steps are required to
+        access the email system on GNU/Linux systems. There are several different email clients for GNU/Linux but for
+        this
+        example we'll be using <a href="https://wiki.archlinux.org/title/GNOME/Evolution">GNOME/Evolution</a>.</p>
+    <b>
+        <p>Important! This guide may not work for other email clients. Refer to the documentation for your email client
+            for more information.
+    </b></p>
+    <p>To start, install Evolution using your distributions' package manager. Examples are shown below.</p>
+    <b>For Ubuntu, Debian and other Debian based distributions: </b>
+    <div class="code-block">
+        <code>
+            <p>sudo apt update</p>
+            <p>sudo apt install evolution</p>
+            <p>sudo apt install evolution-ews</p>
+        </code>
+    </div>
+    <b>For Fedora/RHEL/CentOS based distributions:</b>
+    <div class="code-block">
+        <code>
+            <p>sudo dnf update</p>
+            <p>sudo dnf install evolution</p>
+            <p>sudo dnf install evolution-ews</p>
+        </code>
+    </div>
+    <b>For Arch Linux (and Arch-based distributions):</b>
+    <div class="code-block">
+        <code>
+            <p>sudo pacman -Syu</p>
+            <p>sudo pacman -S evolution</p>
+            <p>sudo pacman -S evolution-ews</p>
+        </code>
+    </div>
+    <b>For Gentoo Linux (and Gentoo-based distributions):</b>
+    <div class="code-block">
+        <code>
+            <p>sudo emerge evolution</p>
+            <p>sudo emerge evolution-ews</p>
+        </code>
+    </div>
+    <p>Alternatively, you can install a Flatpak version of Evolution. A guide on how to install Flatpak is available <a
+            href="https://flatpak.org/setup/">here</a>.</p>
+    <b>
+        <p><i class="fas fa-info-circle"></i> The Flatpak build of Evolution ships with evolution-ews built in.</p>
+    </b>
+    <div class="code-block">
+        <code>
+            <p>flatpak install flathub org.gnome.Evolution</p>
+        </code>
+    </div>
+    <p>Once installed, open Evolution and press <b>File &rarr; New &rarr; Mail Account</b>. You will then be prompted to
+        follow a wizard.</p>
+    <p>Next, enter your Heriot-Watt Email Address, unselect "Look up mail server details based on the entered email
+        address" and click <b>Next</b>.</p>
+    <p>Enter the following for each of the following fields:</p>
+    <ul>
+        <li>Server Type: <b>Exchange Web Services</b></li>
+        <li>Username: <b>Your Heriot-Watt Email Address</b></li>
+        <li>Host URL: <b>https://outlook.office365.com</li></b></li>
+        <li>Authentication Type: <b>OAuth2 (Office365)</b></li>
+    </ul>
+    <p>Then click <b>Fetch URL</b>. You will be prompted for your password, and if successful, the fields at the bottom
+        filled in with the correct values.</p>
+    <p>Finally, click <b>Next</b>, and alter any settings you wish. Click <b>Next</b> again, and then finally you can
+        then click <b>Finish</b>.</p>
+    <p>If everything went according to plan, you should be able to access your email account from Evolution!</p>
+    <hr>
+    <a href="#images" class="h h2">
+        <i class="fas fa-camera"></i>
+        <span id="images">Step-by-Step with Images</span>
+    </a>
+    <div class="image-container">
+        <h3>Step 1</h3>
+        <img src="images/ews/ews-first-step.png" alt="First step of EWS" />
+        <h3>Step 2</h3>
+        <p>Note that for this step, the following results are expected after clicking <b>Fetch URL</b> and entering your
+            password.</p>
+        <img src="images/ews/ews-second-step.png" alt="Second step of EWS" />
+        <h3>Step 3</h3>
+        <img src="images/ews/ews-third-step.png" alt="Third step of EWS" />
+        <h3>Step 4</h3>
+        <img src="images/ews/ews-fourth-step.png" alt="Fourth step of EWS" />
+        <h3>Step 5</h3>
+        <img src="images/ews/ews-fifth-step.png" alt="Fifth step of EWS" />
+    </div>
+
+    <footer>
+        <center>
+            <p>This website is unaffiliated with Heriot-Watt University or the Student Union.</p>
+            <p>Contribute to this site on <a class="inlineLink" href="https://github.com/hw-cs-reps/myhwu"
+                    rel="noreferrer noopener" target="_blank">GitHub</a>!</p>
+        </center>
+    </footer>
+</div>
+<script data-goatcounter="https://myhwu.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</div>
