@@ -6,7 +6,7 @@ and online services.
 
 ## Contribution
 
-We accept contribution! Please make a pull request with your changes. The
+We accept contribution! Please make a [pull request](https://github.com/hw-cs-reps/portal/pulls) with your changes. The
 website is written in plain and simple HTML, and is released under BSD 2-Clause
 license.
 <br><br>
