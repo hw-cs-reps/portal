@@ -215,6 +215,10 @@ footer {
   .image-container {
     background-color: #252525;
   }
+
+  .footer {
+    color: #EEE;
+  }
 }
 
 .card-grid {
